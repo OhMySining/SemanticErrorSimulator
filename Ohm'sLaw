@@ -1,0 +1,30 @@
+using System;
+
+
+namespace Ohms_Law
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("This program asks you to input Resistance (R) and Ampere (I) and compute the equivalent Voltage");
+            Console.WriteLine("");
+
+            Double R;
+            Console.Write("\n\n\n\n\t\t\t\tEnter value for Resistance:");
+            R = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("");
+
+            Double I;
+            Console.Write("\n\n\n\n\t\t\t\tEnter value for Ampere:");
+            I = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("");
+
+            Double V;
+            V = I * R;
+            Console.WriteLine("\n\n\n\n\t\t\t\tThe Computed Voltage = {0:F2}", V);
+
+            Console.ReadKey(true);
+        }
+    }
+}
