@@ -1,0 +1,60 @@
+using System;
+
+namespace ChooseOperationByUserTwoNumbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double num1;
+            double num2;
+            double result;
+
+            string operation;
+
+            Console.WriteLine("This program allows the user to choose an operation tool for the two input numbers.");
+            Console.WriteLine("");
+
+            Console.Write("Enter first number: ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("");
+
+            Console.Write("Enter second number: ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("");
+
+            Console.WriteLine("Choose an operation you would like to do.");
+            Console.Write("Enter + for addition, - for substraction, * for multiplication, and / or any key for division: ");
+            operation = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("");
+
+            if (operation == "+")
+            {
+                result = num1 + num2;
+            }
+            else if (operation == "-")
+            {
+                result = num1 - num2;
+            }
+            else if (operation == "*")
+            {
+                result = num1 * num2;
+            }          
+            else
+            {
+                result = num2 == 0? double.NaN : num1 / num2;
+            }
+            if (double.IsNaN(result))
+            {
+                Console.WriteLine("Undefined!");
+            }
+            else
+            {
+                Console.WriteLine("The computed value is {0}", result);
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Thank you for using my simple calculator!");
+            Console.ReadKey(true);
+        }
+    }
+}
