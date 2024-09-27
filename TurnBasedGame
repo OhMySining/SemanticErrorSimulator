@@ -1,0 +1,91 @@
+using System;
+
+namespace TurnBasedGame
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int PlayerHp = 50;
+            int EnemyHp = 40;
+
+            int PlayerAttack = 5;
+            int EnemyAttack = 7;
+
+            int IncomingHealing = 4;
+
+            Random random = new Random();
+
+            Console.WriteLine("This application allows the user to experience simple turn based game that can attack and heal.");
+            Console.WriteLine("");
+            
+            while (PlayerHp > 0 &&  EnemyHp > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("!!!Your turn!!!");
+
+                Console.ForegroundColor= ConsoleColor.White;
+                Console.WriteLine("Your HP: {0} | Enemys HP: {1}", PlayerHp, EnemyHp);
+
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("Enter 'a' to attack and 'h' to heal: ");
+
+                string choice = Console.ReadLine();
+
+                Console.WriteLine("");
+
+                if (choice == "a")
+                {
+                    EnemyHp -= PlayerAttack;
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine("You deal {0} damge!", PlayerAttack);
+                    Console.WriteLine("");
+                }
+                else if (choice == "h")
+                {
+                    PlayerHp += IncomingHealing;
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine("You restore {0} of your HP!", IncomingHealing);
+                    Console.WriteLine("");
+                }
+                if (EnemyHp > 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("!!!Enemy's turn!!!");
+
+                    Console.ForegroundColor= ConsoleColor.White;
+                    Console.WriteLine("Your HP: {0} | Enemys HP: {1}", PlayerHp, EnemyHp);
+                    Console.WriteLine("");
+
+                    int EnemyChoice = random.Next(0, 2);
+
+                    if (EnemyChoice == 0)
+                    {
+                        PlayerHp -= EnemyAttack;
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("Enemy deals {0} damage!", EnemyAttack);
+                        Console.WriteLine("");
+                    }
+                    else
+                    {
+                        EnemyHp += IncomingHealing;
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("The enemy used healing and restored {0} HP", IncomingHealing);
+                        Console.WriteLine("");
+                    }
+                }
+            }
+            if (PlayerHp > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("You've won!");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Enemy won!");
+            }
+            Console.ReadKey(true);
+        }
+    }
+}
