@@ -1,0 +1,24 @@
+using System;
+
+namespace FarenheitToCelsius
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\n\n\n\n\t\t\t\tConverting Fahrenheit to Celsius.");
+            Console.WriteLine("");
+
+            double F;
+            Console.Write("\n\n\n\n\t\t\t\tTemperature in Farenheit: ");
+            F = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("");
+
+            double C;
+            C = (F - 32) * 5 / 9;
+
+            Console.WriteLine("\n\n\n\n\t\t\t\tConverted to Celsius Value is: {0:F3}C", C);
+            Console.ReadKey(true);
+        }
+    }
+}
