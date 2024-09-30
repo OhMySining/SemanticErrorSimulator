@@ -1,0 +1,39 @@
+using System;
+
+namespace TAKEHOMEACTIVITY1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double x;
+            double y;
+            double z;
+
+            double Result1;
+            double Result2;
+
+            Console.Write("Enter first number: ");
+            x =  Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter second number: ");
+            y = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter third number: ");
+            z = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("");
+
+            Result1 = (x + y) * z;
+            Console.WriteLine("For the first operation: (x+y)*z");
+            Console.WriteLine("({0}+{1})*{2}", x, y, z);
+            Console.WriteLine("This operation equals to: {0}", Result1);
+            Console.WriteLine("");
+
+            Result2 = (x * y) + (y * z);
+            Console.WriteLine("For the second operation: (x*y) + (y*z)");
+            Console.WriteLine("({0}*{1})+({2}*{3})", x,y,y,z);
+            Console.WriteLine("This operation equals to: {0}", Result2);
+            Console.ReadKey(true);
+        }
+    }
+}
