@@ -1,0 +1,25 @@
+using System;
+
+namespace Activity2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double OriginalPrice;
+            double VatAmount;
+            double SellingPrice;
+
+            Console.Write("\n\t\t\t\tInput Original Selling Price: P");
+            OriginalPrice = Convert.ToDouble(Console.ReadLine());
+
+            VatAmount = (OriginalPrice * 0.12) / (1 + 0.12);
+            SellingPrice = OriginalPrice + VatAmount;
+
+            Console.WriteLine("\n\t\t\t\tVAT Amount= {0:F2}", VatAmount);
+            Console.WriteLine("\n\t\t\t\tTotal Selling Price= {0:F2}", SellingPrice);
+
+            Console.ReadKey(true);
+        }
+    }
+}
