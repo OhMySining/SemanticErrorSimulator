@@ -1,0 +1,35 @@
+using System;
+
+namespace ToDoList
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int choice;
+
+            Console.WriteLine("Welcome to my first ToDoList project!");
+            Console.WriteLine("\nPick an action: \n1. Add new task \n2. View pendings \n3. Exit");
+            Console.Write("\nEnter your choice here: ");
+            choice = Convert.ToInt32(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("\nPress + to add task(s).");
+                    break;
+                case 2:
+                    Console.WriteLine("\nHere are your pendings: ");
+                    break;
+                case 3:
+                    Console.WriteLine("\nThank you for using my first ToDList projecr!");
+                    break;
+                default:
+                    Console.WriteLine("\nPlease enter a valid action.");
+                    break;
+            }
+
+            Console.ReadKey(true);
+        }
+    }
+}
