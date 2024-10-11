@@ -30,7 +30,7 @@ namespace CarsPrice
                             if (UserMoney >= 764000)
                             {
                                 Console.WriteLine("\nYou've purchased a Honda car!");
-                                if (UserMoney > 76400)
+                                if (UserMoney > 764000)
                                 {
                                     Change = UserMoney - HondaPrice;
                                     Console.WriteLine($"\nHere is your change {Change:n2}");
