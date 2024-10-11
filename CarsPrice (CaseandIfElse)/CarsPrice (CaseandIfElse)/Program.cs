@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CarsPrice
 {
@@ -10,9 +10,10 @@ namespace CarsPrice
             double HondaPrice = 764000, HyundaiPrice = 1068000, NissanPrice = 1179000, MitsubishiPrice = 919000, UserMoney, Change;
             string YesorNo, Yes0rNo2;
 
+            Console.WriteLine("\n\nThis program allow the user to pick a car and view it's price to purchase it.");
+
             do
             {
-                Console.WriteLine("\n\nThis program allow the user to pick a car and view it's price to purchase it.");
                 Console.WriteLine("\nWhat brand of car are you looking for? \n1. Honda \n2. Hyundai \n3. Nissan \n4. Mitsubishi \n5. Exit");
                 Console.Write("\nEnter your choice here: ");
                 choice = Convert.ToInt32(Console.ReadLine());
@@ -30,7 +31,7 @@ namespace CarsPrice
                             if (UserMoney >= 764000)
                             {
                                 Console.WriteLine("\nYou've purchased a Honda car!");
-                                if (UserMoney > 764000)
+                                if (UserMoney > 76400)
                                 {
                                     Change = UserMoney - HondaPrice;
                                     Console.WriteLine($"\nHere is your change {Change:n2}");
@@ -126,6 +127,9 @@ namespace CarsPrice
                         {
                             Console.WriteLine("\nThank you for your time!");
                         }
+                        break;
+                    case 5:
+                        Console.WriteLine("\nThank you for checking my CarPrice project.");
                         break;
                     default:
                         Console.WriteLine("\nInvalid input! Please select a valid choice.");
