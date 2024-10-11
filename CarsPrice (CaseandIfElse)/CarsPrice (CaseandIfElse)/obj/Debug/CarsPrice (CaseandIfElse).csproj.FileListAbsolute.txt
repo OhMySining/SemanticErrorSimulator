@@ -1,0 +1,7 @@
+C:\Users\efren L Cenir\OneDrive\Desktop\JC04\CarsPrice (CaseandIfElse)\CarsPrice (CaseandIfElse)\bin\Debug\CarsPrice (CaseandIfElse).exe.config
+C:\Users\efren L Cenir\OneDrive\Desktop\JC04\CarsPrice (CaseandIfElse)\CarsPrice (CaseandIfElse)\bin\Debug\CarsPrice (CaseandIfElse).exe
+C:\Users\efren L Cenir\OneDrive\Desktop\JC04\CarsPrice (CaseandIfElse)\CarsPrice (CaseandIfElse)\bin\Debug\CarsPrice (CaseandIfElse).pdb
+C:\Users\efren L Cenir\OneDrive\Desktop\JC04\CarsPrice (CaseandIfElse)\CarsPrice (CaseandIfElse)\obj\Debug\CarsPrice (CaseandIfElse).csproj.AssemblyReference.cache
+C:\Users\efren L Cenir\OneDrive\Desktop\JC04\CarsPrice (CaseandIfElse)\CarsPrice (CaseandIfElse)\obj\Debug\CarsPrice (CaseandIfElse).csproj.CoreCompileInputs.cache
+C:\Users\efren L Cenir\OneDrive\Desktop\JC04\CarsPrice (CaseandIfElse)\CarsPrice (CaseandIfElse)\obj\Debug\CarsPrice (CaseandIfElse).exe
+C:\Users\efren L Cenir\OneDrive\Desktop\JC04\CarsPrice (CaseandIfElse)\CarsPrice (CaseandIfElse)\obj\Debug\CarsPrice (CaseandIfElse).pdb
